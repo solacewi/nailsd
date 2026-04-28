@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .logo-holder {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #fff;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+            color: white;
+        }
+
+        /* Навигация */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        #app {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .screen {
+            width: 100%;
+            min-height: calc(100vh - 140px);
+        }
+
+        .fl {
+            display: flex;
+        }
+
+        .fl-jc-c {
+            justify-content: center;
+        }
+
+        .fl-ai-c {
+            align-items: center;
+        }
+
+        .fl-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-from {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            gap: 20px;
+        }
+
+        .login-from h3 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        form {
+            gap: 15px;
+        }
+
+        .upload {
+            text-align: center;
+        }
+
+        .upload label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .upload input[type="file"] {
+            display: none;
+        }
+
+        .upload span {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .upload span:hover {
+            background-color: #e0e0e0;
+        }
+
+        input {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #333;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .login-from > span {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .login-from > span a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+
+        .login-from > span a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .logo-container {
+                justify-content: center;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .login-from {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-holder">
+                <img class="logo" src="logo.jpg" alt="logo">
+            </div>
+            <h1>Nails</h1>
+        </div>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Главная</a></li>
+                 <li><a href="Галерея.html">Галерея</a></li>
+                <li><a href="%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8(2).html">Услуги</a></li>
+                <li><a href="%D0%BE%D1%82%D0%B7%D1%8B%D0%B2%D1%8B(2).html">Отзывы</a></li>
+                <li><a href="vhod%20v%20uchetku(2).html">Вход</a></li>
+                 <li><a href="контакты.html">Контакты</a></li>
+                <li><a href="%D0%9B%D0%9A(2).html">Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="app">
+        <div class="screen fl fl-jc-c fl-ai-c">
+            <div class="login-from fl-col">
+                <h3>Регистрация</h3>
+                <form class="fl-col">
+                    <div class="upload">
+                        <label>
+                            <input type="file" id="upload-file">
+                            <span>Выберите аватар</span>
+                        </label>
+                    </div>
+                    <input type="text" placeholder="Логин">
+                    <input type="password" placeholder="Пароль">
+                    <input type="password" placeholder="Повторите пароль">
+                    <button>Отправить</button>
+                </form>
+                <span>У вас есть аккаунт?<a href="vhod%20v%20uchetku(2).html">Войти</a></span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nails. Автор: Ясная Анна Викторовна. Группа: 2ИС-24</p>
+    </footer>
+</body>
+</html>

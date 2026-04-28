@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактирование профиля</title>
+    <link rel="stylesheet" href="css kyrsach.css">
+</head>
+<body>
+    <header>
+        <div class="logo-holder">
+           <img class="logo" src="logo.jpg" alt="logo">
+        </div>
+        <h1>Редактирование профиля</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="%D0%9B%D0%9A(2).html">Личный кабинет</a></li>
+                <li><a href="vhod%20v%20uchetku(2).html">Выйти</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main>
+        <section id="edit-profile">
+            <h2>Обновите свои данные</h2>
+            <form action="update_profile.php" method="POST">
+                <label for="username">Имя:</label>
+                <input type="text" id="username" name="username" value="Анна" required>
+ 
+               <br> <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="annaviktorovna@gmail.com" required>
+            </br>
+ 
+                <button type="submit">Сохранить изменения</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+ 
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+ 
+#login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.form-group {
+    margin-bottom: 15px;
+}
+ 
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+ 
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+ 
+button {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+ 
+button:hover {
+    background: #555;
+}
+ 
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.logo {
+    width: 90px; 
+    height: 90px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    padding-right: auto;
+}
+.logo img {
+    width: 100%; 
+    height: auto; 
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+ 
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+ 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+ 
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+ 
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+ 
+#hero {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+ 
+.service {
+    background: #e2e2e2;
+    margin: 10px 0;
+    padding: 10px;
+}
+ 
+.review {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+}
+ 
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.logo {
+    width: 90px; 
+    height: 90px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+.logo img {
+    width: 100%; 
+    height: auto; 
+}
+.carousel {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    }
+    .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    }
+    .carousel-images img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+    }
+    .carousel-images img.active {
+    display: block;
+    }
+    .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    }
+    .carousel-button.prev {
+    left: 10px;
+    }
+    .carousel-button.next {
+    right: 10px;
+    }
+    .carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    }
+     
+    .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+     
+    .dot.active {
+    background-color: #333;
+    }
+    footer {
+        background-color: #333;  
+        color: white;             
+        text-align: center;        
+        padding: 20px;          
+        position: relative;       
+        bottom: 0;                 
+        width: 100%;              
+        margin-top: auto;         
+    }
+     
+    body {
+        display: flex;            
+        flex-direction: column;   
+        min-height: 100vh;       
+    }
+    .service {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .catalog {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+    }

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы клиентов</title>
+    <link rel="stylesheet" href="css kyrsach.css">
+    <style>
+        .comment-section {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .comment-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .comment-section h3 {
+            color: #333;
+            margin: 30px 0 15px 0;
+            text-align: left;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            resize: vertical;
+            margin-bottom: 15px;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #333;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+        #commentList {
+            list-style: none;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        #commentList li {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            text-align: left;
+        }
+
+        .comment-header {
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .comment-author {
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .comment-text {
+            color: #333;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        .gratitude-text {
+            max-width: 800px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-left: 4px solid #333;
+            border-radius: 5px;
+            text-align: center;
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .comment-section {
+                margin: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-holder">
+                <img class="logo" src="logo.jpg" alt="logo">
+            </div>
+            <h1>Nails</h1>
+        </div>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Главная</a></li>
+                  <li><a href="Галерея.html">Галерея</a></li>
+                <li><a href="%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8(2).html">Услуги</a></li>
+                <li><a href="vhod%20v%20uchetku(2).html">Вход</a></li>
+                 <li><a href="контакты.html">Контакты</a></li>
+                <li><a href="%D0%9B%D0%9A(2).html">Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="comment-section">
+        <h2>Оставьте отзыв</h2>
+        <textarea id="commentInput" placeholder="Ваш отзыв..."></textarea>
+        <button onclick="addComment()">Отправить</button>
+        <h3>Отзывы:</h3>
+        <ul id="commentList">
+            <li>
+                <div class="comment-header">
+                    <strong class="comment-author">Анастасия</strong>
+                </div>
+                <div class="comment-text">Я в полном восторге от маникюра! Мастер просто волшебница – сделала все аккуратно, быстро и именно так, как я хотела. Ноготки выглядят идеально, покрытие держится прекрасно, а атмосфера в салоне такая расслабляющая! Однозначно рекомендую и вернусь снова!</div>
+            </li>
+            <li>
+                <div class="comment-header">
+                    <strong class="comment-author">Светлана</strong>
+                </div>
+                <div class="comment-text">Наконец-то нашла идеального мастера! Мой гель-лак держится уже третью неделю без единого скола, а это для меня рекорд. Качество материалов на высоте, и видно, что мастер очень ответственно подходит к своей работе. Мои ноготки теперь всегда будут у вас!</div>
+            </li>
+            <li>
+                <div class="comment-header">
+                    <strong class="comment-author">Алена</strong>
+                </div>
+                <div class="comment-text">Спасибо огромное за невероятный дизайн! Я пришла без конкретной идеи, но мастер предложила такие крутые варианты, что я просто не могла выбрать. В итоге получился настоящий шедевр на моих руках! Чувствую себя особенной и очень стильной.</div>
+            </li>
+            <li>
+                <div class="comment-header">
+                    <strong class="comment-author">Ксения</strong>
+                </div>
+                <div class="comment-text">Очень довольна результатом! Мастер сделала всё аккуратно, форма идеальная, покрытие ровное. Обязательно приду еще!</div>
+            </li>
+            <li>
+                <div class="comment-header">
+                    <strong class="comment-author">Марина</strong>
+                </div>
+                <div class="comment-text">Долго искала мастера, который сможет привести мои тонкие и ломкие ногти в порядок. Здесь мне не только сделали красивый маникюр, но и дали ценные советы по уходу. С каждым разом ногти становятся крепче. Очень благодарна за профессионализм!</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="gratitude-text">
+        <p>Мы ценим отзывы наших клиентов и стремимся сделать работу еще лучше для удовлетворения их потребностей.</p>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2026 Nails. Автор: Ясная Анна Викторовна. Группа: 2ИС-24</p>
+    </footer>
+
+    <script>
+        function getUserName() {
+            let userName = prompt('Представьтесь, пожалуйста (как вас зовут?):');
+            if (!userName || userName.trim() === '') {
+                userName = 'Аноним';
+            }
+            return userName.trim();
+        }
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+        }
+        function addComment() {
+            const commentInput = document.getElementById('commentInput');
+            const commentText = commentInput.value.trim();
+            
+            if (commentText === '') {
+                alert('Пожалуйста, напишите ваш отзыв!');
+                return;
+            }
+            
+            const userName = getUserName();
+            
+            const commentList = document.getElementById('commentList');
+            const newComment = document.createElement('li');
+            
+            newComment.innerHTML = `
+                <div class="comment-header">
+                    <strong class="comment-author">${escapeHtml(userName)}</strong>
+                </div>
+                <div class="comment-text">${escapeHtml(commentText)}</div>
+            `;
+            
+            commentList.insertBefore(newComment, commentList.firstChild);
+            commentInput.value = '';
+            
+            alert('Спасибо за ваш отзыв!');
+        }
+    </script>
+</body>
+</html>
